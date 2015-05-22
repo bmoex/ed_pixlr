@@ -1,0 +1,36 @@
+{
+    "name": "typo3cms/ed_pixlr",
+    "description": "TYPO3 Extension: Integrates the Pixlr online image editing service into the TYPO3 backend.",
+    "type": "typo3-cms-extension",
+
+    "keywords": [
+        "TYPO3",
+        "CMS",
+        "Bluechip Software GmbH",
+        "Extbase",
+        "Pixlr"
+    ],
+    "homepage": "https://github.com/bmoex/ed_pixlr",
+    "license": "LGPL-3.0+",
+
+    "version": "2.3.8",
+
+    "authors": [
+        {
+            "name": "Bluechip Software GmbH",
+            "email": "em@bluechip.at",
+            "homepage": "http://www.bluechip.at"
+        },
+        {
+            "name": "Benjamin Serfhos",
+            "email": "benjamin@serfhos.com",
+            "homepage": "http://serfhos.com"
+        }
+    ],
+
+    "require": {
+        "composer/installers": "~1.0"
+    },
+
+    "minimum-stability": "dev"
+}

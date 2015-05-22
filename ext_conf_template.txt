@@ -1,0 +1,5 @@
+# cat=basic; type=options[express,editor]; label=LLL:EXT:ed_pixlr/locallang.xml:editor
+defaultEditor = express
+
+# cat=basic; type=options[yes=1,no=0]; label=LLL:EXT:ed_pixlr/locallang.xml:userenabled
+userEnabled = 1

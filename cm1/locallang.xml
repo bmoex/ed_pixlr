@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for ed_pixlr module cm1</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Edit in Pixlr</label>
+			<label index="label_overwrite">Overwrite existing file</label>
+			<label index="label_filename">Filename</label>
+			<label index="label_submit">Save</label>
+			<label index="label_close">Close</label>
+			<label index="error_fileexists">File exists and overwrite flag was not set.</label>
+			<label index="error_download">The edited file could not be fetched from the Pixlr server.</label>
+			<label index="error_write">File could not be written.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="title">Mit Pixlr bearbeiten</label>
+			<label index="label_overwrite">Vorhandene Datei überschreiben</label>
+			<label index="label_filename">Dateiname</label>
+			<label index="label_submit">Speichern</label>
+			<label index="label_close">Schließen</label>
+			<label index="error_fileexists">Datei existiert bereits und das ÜBerschreiben-Flag ist nicht gesetzt.</label>
+			<label index="error_download">Die bearbeitete Datei konnte nicht vom Pixlr-Server geholt werden.</label>
+			<label index="error_write">Datei konnte nicht geschrieben werden.</label>
+		</languageKey>
+	</data>
+</T3locallang>
