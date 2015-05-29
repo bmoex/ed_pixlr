@@ -1,0 +1,44 @@
+<f:layout name="Backend"/>
+
+<f:section name="Actions">
+    <f:if condition="{returnUrl}">
+        <script>top.content.list_frame.pixlrReturnUrl = '{returnUrl}';</script>
+        <f:be.buttons.icon uri="{returnUrl}" additionalAttributes="{class: 'go-back-to-list'}" icon="actions-view-go-back" title="{f:translate(key:'LLL:EXT:lang/locallang_common.xlf:back')}" />
+    </f:if>
+</f:section>
+
+
+<f:section name="Content">
+
+    <f:if condition="{file}">
+        <f:then>
+            <div id="pixlr-container"></div>
+
+            <f:comment>
+                Set extension configuration and initialize
+            </f:comment>
+
+            <script>
+                var target = '{target -> f:format.raw()}';
+                var image =  '{fileUri -> f:format.raw()}';
+                var title = '{file.name}';
+                var service = '{service}';
+
+                pixlr.overlay.show({
+                    container: 'pixlr-container',
+                    target: target,
+                    exit: target,
+                    image: image,
+                    title: title,
+                    service: service
+                });
+            </script>
+        </f:then>
+        <f:else>
+            <div class="alert alert-warning">
+                <strong>No file found..</strong>
+                Something went wrong with retrieving the correct file to adjust in Pixlr.
+            </div>
+        </f:else>
+    </f:if>
+</f:section>

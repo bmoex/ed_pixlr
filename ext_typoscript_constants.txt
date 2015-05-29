@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ed_pixlr/Configuration/TypoScript/constants.txt">
