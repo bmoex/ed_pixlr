@@ -1,0 +1,12 @@
+.ed-pixlr-backend {
+    div#typo3-inner-docbody {
+        padding: 0;
+    }
+
+    div#typo3-inner-docbody,
+    #pixlr-container,
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+module.tx_edpixlr {
+    view {
+        # cat=plugin.tx_edpixlr/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:ed_pixlr/Resources/Private/Templates
+        # cat=plugin.tx_edpixlr/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:ed_pixlr/Resources/Private/Layouts
+        # cat=plugin.tx_edpixlr/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:ed_pixlr/Resources/Private/Partials
+    }
+
+    settings {
+        # cat=plugin.tx_edpixlr/basic; type=options[editor,express]; label=Display type of rendering
+        render = express
+    }
+}

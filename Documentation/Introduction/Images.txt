@@ -1,0 +1,17 @@
+.. |screenshot1|      image:: ../Images/screenshot1.png
+.. :align: center
+.. :border: 0
+.. :name: screenshot1
+.. :vspace: 50
+
+.. |screenshot2|      image:: ../Images/screenshot2.png
+.. :align: center
+.. :border: 0
+.. :name: screenshot2
+.. :vspace: 50
+
+.. |screenshot3|      image:: ../Images/screenshot3.png
+.. :align: center
+.. :border: 0
+.. :name: screenshot3
+.. :vspace: 50

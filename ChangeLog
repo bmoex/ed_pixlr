@@ -1,4 +1,7 @@
 2010-02-22 Bluechip Software  <media@bluechip.at>
 
-	* initial release
+    * initial release
 
+2015-06-22 Benjamin Serfhos <benjamin@serfhos.com>
+
+    * Total rewrite for readability and extbase structure

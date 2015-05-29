@@ -1,0 +1,20 @@
+# Module configuration
+module.tx_edpixlr {
+    view {
+        templateRootPaths {
+            10 = {$module.tx_edpixlr.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            10 = {$module.tx_edpixlr.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            10 = {$module.tx_edpixlr.view.layoutRootPath}
+        }
+    }
+
+    settings {
+        render = {$module.tx_edpixlr.settings.render}
+    }
+}
