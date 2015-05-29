@@ -34,17 +34,18 @@ class Clickmenu implements \TYPO3\CMS\Core\SingletonInterface
         if (strlen($table) > 0 && !empty($uid)) {
             return $menuItems;
         }
-        if ($clickMenu->cmLevel === 0 && $clickMenu->isDBmenu === false && $uid === 0) {
+
+        if ($clickMenu->cmLevel === 0 && (bool) $clickMenu->isDBmenu === false) {
+
             $file = $this->getPixlrService()->getEditableFile($table);
             if ($file instanceof \TYPO3\CMS\Core\Resource\File) {
-                $link = BackendUtility::getModuleUrl('file_EdPixlrEdPixlrEditor',
-                    array('file' => $file->getUid()));
+                $link = BackendUtility::getModuleUrl('file_EdPixlrEdPixlrEditor', array('file' => $file->getUid()));
                 $icon = IconUtility::getSpriteIcon('extensions-ed_pixlr-pixlr_edit');
 
                 $menuItem = $clickMenu->linkItem(
                     $this->getPixlrService()->translate('cm1_title'),
                     $icon,
-                    $clickMenu->urlRefForCM($link),
+                    $clickMenu->urlRefForCM($link, 'returnUrl'),
                     1
                 );
 

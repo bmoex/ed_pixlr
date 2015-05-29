@@ -2,7 +2,6 @@
 
 <f:section name="Actions">
     <f:if condition="{returnUrl}">
-        <script>top.content.list_frame.pixlrReturnUrl = '{returnUrl}';</script>
         <f:be.buttons.icon uri="{returnUrl}" additionalAttributes="{class: 'go-back-to-list'}" icon="actions-view-go-back" title="{f:translate(key:'LLL:EXT:lang/locallang_common.xlf:back')}" />
     </f:if>
 </f:section>
