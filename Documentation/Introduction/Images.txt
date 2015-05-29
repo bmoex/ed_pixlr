@@ -15,3 +15,9 @@
 .. :border: 0
 .. :name: screenshot3
 .. :vspace: 50
+
+.. |screenshot4|      image:: ../Images/screenshot4.png
+.. :align: center
+.. :border: 0
+.. :name: screenshot4
+.. :vspace: 50

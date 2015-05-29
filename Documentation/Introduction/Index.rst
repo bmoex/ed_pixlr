@@ -28,3 +28,7 @@ Change your image in Pixlr
 Added messages when successful
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 |screenshot3|
+
+Access via backend user/usergroup
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|screenshot4|
