@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";AACI,yCAAwB;EACpB,OAAO,EAAE,CAAC;;;AAGd;;wBAEO;EACH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI",
+"mappings": ";AACI,yCAAwB;EACpB,OAAO,EAAE,CAAC;;;AAGd;;wBAEO;EACH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;;;AAGhB,iCAAgB;EACZ,MAAM,EAAE,IAAI",
 "sources": ["ed-pixlr-backend.scss"],
 "names": [],
 "file": "ed-pixlr-backend.css"

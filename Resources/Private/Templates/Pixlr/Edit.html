@@ -2,36 +2,52 @@
 
 <f:section name="Actions">
     <f:if condition="{returnUrl}">
-        <f:be.buttons.icon uri="{returnUrl}" additionalAttributes="{class: 'go-back-to-list'}" icon="actions-view-go-back" title="{f:translate(key:'LLL:EXT:lang/locallang_common.xlf:back')}" />
+        <f:be.buttons.icon uri="{returnUrl}" additionalAttributes="{class: 'go-back-to-list'}"
+            icon="actions-view-go-back" title="{f:translate(key:'LLL:EXT:lang/locallang_common.xlf:back')}"/>
     </f:if>
 </f:section>
 
 
 <f:section name="Content">
-
     <f:if condition="{file}">
         <f:then>
-            <div id="pixlr-container"></div>
+            <f:if condition="{securedConnection}">
+                <f:then>
+                    <div class="typo3-messages">
+                        <div class="alert alert-warning typo3-message message-error">
+                            <div class="message-header">Connection secured</div>
 
-            <f:comment>
-                Set extension configuration and initialize
-            </f:comment>
+                            <div class="message-body">You are trying to edit an image while having a secured connection. Unfortunatly Pixlr Express
+                                does not support this feature. Try again without a secured connection, go to "http://"
+                                instead of "https://".
+                            </div>
+                        </div>
+                    </div>
+                </f:then>
+                <f:else>
+                    <div id="pixlr-container"></div>
 
-            <script>
-                var target = '{target -> f:format.raw()}';
-                var image =  '{fileUri -> f:format.raw()}';
-                var title = '{file.name}';
-                var service = '{service}';
+                    <f:comment>
+                        Set extension configuration and initialize
+                    </f:comment>
 
-                pixlr.overlay.show({
-                    container: 'pixlr-container',
-                    target: target,
-                    exit: target,
-                    image: image,
-                    title: title,
-                    service: service
-                });
-            </script>
+                    <script>
+                        var target = '{target -> f:format.raw()}';
+                        var image = '{fileUri -> f:format.raw()}';
+                        var title = '{file.name}';
+                        var service = '{service}';
+
+                        pixlr.overlay.show({
+                            container: 'pixlr-container',
+                            target: target,
+                            exit: target,
+                            image: image,
+                            title: title,
+                            service: service
+                        });
+                    </script>
+                </f:else>
+            </f:if>
         </f:then>
         <f:else>
             <div class="alert alert-warning">

@@ -55,7 +55,19 @@ class PixlrController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             }
         }
 
-        $this->view->assign('returnUrl', GeneralUtility::_GP('returnUrl'));
+        $this->view->assignMultiple(array(
+            'returnUrl' => GeneralUtility::_GP('returnUrl'),
+            'securedConnection' => $this->isSecuredConnection(),
+        ));
+    }
+
+    /**
+     * Pixlr does not work under https environment, check if current
+     *
+     * @return string
+     */
+    protected function isSecuredConnection() {
+        return GeneralUtility::getIndpEnv('TYPO3_SSL');
     }
 
     /**
