@@ -39,7 +39,7 @@ class Clickmenu implements \TYPO3\CMS\Core\SingletonInterface
 
             $file = $this->getPixlrService()->getEditableFile($table);
             if ($file instanceof \TYPO3\CMS\Core\Resource\File) {
-                $link = BackendUtility::getModuleUrl('file_EdPixlrEdPixlrEditor', array('file' => $file->getUid()));
+                $link = BackendUtility::getModuleUrl('file_EdPixlrDisplay', array('file' => $file->getUid()));
                 $icon = IconUtility::getSpriteIcon('extensions-ed_pixlr-pixlr_edit');
 
                 $menuItem = $clickMenu->linkItem(

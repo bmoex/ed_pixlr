@@ -40,7 +40,7 @@ class PixlrService implements \TYPO3\CMS\Core\SingletonInterface
     {
         if ($this->hasAccess === null) {
             $this->hasAccess = $this->getBackendUserAuthentication()->modAccess(
-                $GLOBALS['TBE_MODULES']['_configuration']['file_EdPixlrEdPixlrEditor'], $exitOnError
+                $GLOBALS['TBE_MODULES']['_configuration']['file_EdPixlrDisplay'], $exitOnError
             );
         }
         return $this->hasAccess;
@@ -172,7 +172,7 @@ class PixlrService implements \TYPO3\CMS\Core\SingletonInterface
     public function getPixlrEditIcon($file)
     {
         $icon = IconUtility::getSpriteIcon('extensions-ed_pixlr-pixlr_edit');
-        $link = BackendUtility::getModuleUrl('file_EdPixlrEdPixlrEditor',
+        $link = BackendUtility::getModuleUrl('file_EdPixlrDisplay',
             array('file' => $file->getUid()));
 
         $onClick = 'top.content.list_frame.location.href=\'' . $link . '&returnUrl=\'+top.rawurlencode(top.content.list_frame.document.location.pathname+top.content.list_frame.document.location.search);return false;';

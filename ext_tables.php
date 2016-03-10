@@ -19,7 +19,7 @@ if ('BE' === TYPO3_MODE) {
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
         'Bluechip.' . $_EXTKEY,
         'file',
-        'ed_pixlr_editor',
+        'display',
         '',
         array(
             // Allowed controller action combinations
@@ -33,5 +33,5 @@ if ('BE' === TYPO3_MODE) {
         )
     );
 
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.hideModules.file := addToList(EdPixlrEdPixlrEditor)');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.hideModules.file := addToList(EdPixlrDisplay)');
 }
