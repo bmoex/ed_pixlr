@@ -16,7 +16,7 @@ EXT: Pixlr integration
     ed_pixlr
 
 :Version:
-    3.0.0
+    |version|
 
 :Language:
     en
