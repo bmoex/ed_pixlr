@@ -4,7 +4,7 @@ $EM_CONF[$_EXTKEY] = array(
     'title' => 'Pixlr integration',
     'description' => 'Integrates the Pixlr online image editing service into the TYPO3 backend.',
     'category' => 'be',
-    'version' => '3.0.3',
+    'version' => '3.0.4',
     'state' => 'beta',
     'uploadFolder' => false,
     'createDirs' => '',
@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author_company' => 'Bluechip Software',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '6.2.0-7.2.99',
+            'typo3' => '6.2.0-7.6.99',
         ),
         'conflicts' => array(),
         'suggests' => array(),

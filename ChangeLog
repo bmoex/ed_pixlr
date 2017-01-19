@@ -5,3 +5,7 @@
 2015-06-22 Benjamin Serfhos <benjamin@serfhos.com>
 
     * Total rewrite for readability and extbase structure
+
+2017-01-19 Benjamin Butschell <ichbingenial@gmail.com>
+
+    * Fixed for TYPO3 7.6 LTS
