@@ -10,6 +10,6 @@ module.tx_edpixlr {
 
     settings {
         # cat=plugin.tx_edpixlr/basic; type=options[editor,express]; label=Display type of rendering
-        render = express
+        render = editor
     }
 }
